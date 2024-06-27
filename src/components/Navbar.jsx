@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from "../assets/bluelogo.png";
+import Logo from "../assets/logo.png";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
 import { Link } from 'react-router-dom';

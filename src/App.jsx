@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Courses from './components/Courses';
 import Whyjava from './components/Whyjava';
+import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
 
 
 
@@ -15,7 +17,8 @@ function App() {
       <Hero />
       <About />
       <Courses />
-      <Whyjava/>
+      <Testimonials/>
+      <Footer/>
      
 
 
