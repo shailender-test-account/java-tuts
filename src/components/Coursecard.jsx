@@ -23,7 +23,7 @@ function Coursecard(props) {
 
   return (
     <div>
-      <div className=" relative col-span-2 group  h-[200px] bg-[#1b2430]  hover:text-[#ffffff]  cursor-pointer duration-500 ease-linear  flex flex-col justify-center items-center gap-5 overflow-hidden">
+      <div className=" relative  group  h-[200px] bg-[#1b2430]  hover:text-[#ffffff]  cursor-pointer duration-500 ease-linear  flex flex-col justify-center items-center gap-5 overflow-hidden">
         <div >
           {props.image}
         </div>
