@@ -17,7 +17,7 @@ function Syllabus() {
             <div className='w-full h-[1px]  bg-[#17cf97] mt-10'>
 
             </div>
-            <div className='w-full grid grid-cols-1 lg:grid-cols-3 '>
+            <div className='w-full grid grid-cols-1 lg:grid-cols-3  mt-8'>
                 <div className='bg-[#1b2430] min-h-[700px]'>
                     <div className='w-full p-3'>
                         <h1 className='text-[#ffffff] font-serif font-bold  text-[20px]'>See what you can learn with Softsynth Java Bootcamp</h1>
