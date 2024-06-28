@@ -1,38 +1,66 @@
-// import "./styles.css";
-import { useState, useEffect } from "react";
-import { useAnimate, stagger, motion ,useInView} from "framer-motion";
+import React from 'react';
+import { motion } from 'framer-motion';
 
-function List() {
-  
 
-  const items = [{ heading: "Versitalty" }, { heading: "CODE ONE ,RUN ANYWHERE" }, { heading: "EASY TO LEARN" }, { heading: "FAST CODING" }];
+const List = () => {
 
-  const Variants={
+  const Listvariants={
     visible:{
       opacity:1,
-      scale:1
-
+      x:0,
+      scale:1,
     },
+
     hidden:{
       opacity:0,
-      scale:0
+      x:-50,
+      scale:0.25
     }
+
   }
-
-
-
- 
- 
-
   return (
-    <div className="List">
-      <ul className="border-2 border-[red]">
-        {items.map((item, index) => (
-          <motion.li   className="text-[#ffffff] font-bold font-serif text-[20px]" key={index}>{item.heading}</motion.li>
-        ))}
-      </ul>
+    <div>
+      <div  className='w-full min-h-[500px]  flex flex-col gap-5'>
+        <motion.div variants={Listvariants} initial="hidden" whileInView={"visible"} transition={{duration:1 , ease:"easeInOut" , type:"spring"}} >
+          <h1 className='text-[20px] text-[#ffffff] font-bold font-serif'>Versatility</h1>
+          <div className='w-56 md:w-96 lg:w-96 h-[2px] bg-[#17cf97] rounded-md'></div>
+        </motion.div>
+
+        <motion.div variants={Listvariants} initial="hidden" whileInView={"visible"} transition={{duration:1.2 , ease:"easeInOut" , type:"spring"}}>
+          <h1 className='text-[20px] text-[#ffffff] font-bold font-serif'>Robust Ecosystem</h1>
+          <div className='w-56 md:w-96 lg:w-96 h-[2px] bg-[#17cf97] rounded-md'></div>
+        </motion.div>
+
+
+        <motion.div variants={Listvariants} initial="hidden" whileInView={"visible"} transition={{duration:1.4 , ease:"easeInOut" , type:"spring"}}>
+          <h1 className='text-[20px] text-[#ffffff] font-bold font-serif'>Write Once, Run Anywhere</h1>
+          <div className='w-56 md:w-96 lg:w-96 h-[2px] bg-[#17cf97] rounded-md'></div>
+        </motion.div>
+
+        <motion.div variants={Listvariants} initial="hidden" whileInView={"visible"} transition={{duration:1.6 , ease:"easeInOut" , type:"spring"}}>
+          <h1 className='text-[20px] text-[#ffffff] font-bold font-serif'>Community Support</h1>
+          <div className='w-56 md:w-96 lg:w-96 h-[2px] bg-[#17cf97] rounded-md'></div>
+        </motion.div>
+
+        <motion.div variants={Listvariants} initial="hidden" whileInView={"visible"} transition={{duration:1.8 , ease:"easeInOut" , type:"spring"}}>
+          <h1 className='text-[20px] text-[#ffffff] font-bold font-serif'>Scalability</h1>
+          <div className='w-56 md:w-96 lg:w-96 h-[2px] bg-[#17cf97] rounded-md'></div>
+        </motion.div>
+
+        <motion.div variants={Listvariants} initial="hidden" whileInView={"visible"} transition={{duration:2 , ease:"easeInOut" , type:"spring"}}>
+          <h1 className='text-[20px] text-[#ffffff] font-bold font-serif'>Professional Development</h1>
+          <div className='w-56 md:w-96 lg:w-96 h-[2px] bg-[#17cf97] rounded-md'></div>
+        </motion.div>
+
+        <motion.div variants={Listvariants} initial="hidden" whileInView={"visible"} transition={{duration:2.2 , ease:"easeInOut" , type:"spring"}}>
+          <h1 className='text-[20px] text-[#ffffff] font-bold font-serif'>Stability</h1>
+          <div className='w-56 md:w-96 lg:w-96 h-[2px] bg-[#17cf97] rounded-md'></div>
+        </motion.div>
+
+      </div>
     </div>
-  );
+  )
 }
 
 export default List;
+

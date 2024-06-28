@@ -10,7 +10,6 @@ import Footer from './components/Footer';
 import Action from './components/Action';
 
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +17,7 @@ function App() {
       <Hero />
       <About />
       <Courses />
+      <Whyjava />
       <Testimonials/>
       <Action/>
       <Footer/>
