@@ -29,37 +29,37 @@ function Courses() {
           <Coursecard
             title="Core Java"
             image={<FaJava size={50} color='#17cf97' />}
-            des="Master Java with our comprehensive tutorials and roadmap"
+            des="Gain proficiency in basic Java programming"
 
           />
           <Coursecard
             title="Advanced Java"
             image={<BsFiletypeJava size={50} color='#17cf97'/>}
-            des="Master Java with our comprehensive tutorials and roadmap"
+            des="Explore advanced Java frameworks and libraries"
 
           />
           <Coursecard
             title="Front-End Development"
             image={<GrReactjs size={50} color='#17cf97'/>}
-            des="Master Java with our comprehensive tutorials and roadmap"
+            des="Master HTML, CSS, and JavaScript for dynamic sites"
           />
           <Coursecard
             title="Web Development with Java"
             image={<TbWorldWww size={50} color='#17cf97'/>}
-            des="Master Java with our comprehensive tutorials and roadmap"
+            des="Create dynamic websites using Java technologies"
 
           />
           <Coursecard
             title="Database Management"
             image={<FaDatabase size={50} color='#17cf97' />}
-            des="Master Java with our comprehensive tutorials and roadmap"
+            des="Optimize data handling with modern DBMS tools"
 
           />
 
           <Coursecard
             title="Integration"
             image={<SiAzuredevops size={50} color='#17cf97'/>}
-            des="Master Java with our comprehensive tutorials and roadmap"
+            des="Learn APIs and middleware for integration"
 
           />
 

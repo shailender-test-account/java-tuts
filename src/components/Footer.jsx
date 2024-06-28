@@ -14,9 +14,9 @@ const Footer = () => {
               href="#"
               className="space-x-3 md:justify-start"
             >
-              <div class="grid grid-cols-1 items-center">
+              <div className="grid grid-cols-1 items-center">
                 <div className="flex flex-col md:flex-row gap-5 items-center">
-                  <img class="w-[25%]" src={Logo} alt="" />
+                  <img className="w-[25%]" src={Logo} alt="" />
                   <span className="text-center w-fit flex flex-col items-center text-slate-300"><h3 className="tracking-[3px] mb-0 font-serif text-[#ffffff] w-fit">Softsynth</h3>Java Academy</span>
                 </div>
                 <div className="pt-14 flex justify-center md:justify-normal">
@@ -28,7 +28,7 @@ const Footer = () => {
           <div className="col-span-12 md:col-span-3 sm:col-span-6 pb-6">
             <p className="pb-1 text-lg mb-3 text-[20px] text-[#ffffff] tracking-[2px] font-serif flex justify-center sm:justify-normal"><span>Quick Links</span></p>
             <ul className="p-0 sm:text-left">
-              <li class="py-[8px] flex justify-center sm:justify-normal">
+              <li className="py-[8px] flex justify-center sm:justify-normal">
                 <a
                   rel="noopener noreferrer"
                   href="#"
@@ -37,7 +37,7 @@ const Footer = () => {
                   Home
                 </a>
               </li>
-              <li class="py-[8px] flex justify-center sm:justify-normal">
+              <li className="py-[8px] flex justify-center sm:justify-normal">
               <a
                   rel="noopener noreferrer"
                   href="#"
@@ -46,7 +46,7 @@ const Footer = () => {
                   Blog
                 </a>
               </li>
-              <li class="py-[8px] flex justify-center sm:justify-normal">
+              <li className="py-[8px] flex justify-center sm:justify-normal">
                 <a
                   rel="noopener noreferrer"
                   href="#"
@@ -55,7 +55,7 @@ const Footer = () => {
                   Courses
                 </a>
               </li>
-              <li class="py-[8px] flex justify-center sm:justify-normal">
+              <li className="py-[8px] flex justify-center sm:justify-normal">
                 <a
                   rel="noopener noreferrer"
                   href="#"
@@ -64,7 +64,7 @@ const Footer = () => {
                   Contact 
                 </a>
               </li>
-              <li class="py-[8px] flex justify-center sm:justify-normal">
+              <li className="py-[8px] flex justify-center sm:justify-normal">
                 <a
                   rel="noopener noreferrer"
                   href="#"
@@ -73,7 +73,7 @@ const Footer = () => {
                   Privacy Policy
                 </a>
               </li>
-			        <li class="py-[8px] flex justify-center sm:justify-normal">
+			        <li className="py-[8px] flex justify-center sm:justify-normal">
                 <a
                   rel="noopener noreferrer"
                   href="#"
@@ -87,7 +87,7 @@ const Footer = () => {
           <div className="col-span-12 md:col-span-3 sm:col-span-6 sm:w-[70%]">
           <p className="pb-1 text-lg mb-3 text-[20px] text-[#ffffff] tracking-[2px] font-serif flex justify-center sm:justify-normal"><span>Contact</span></p>
             <ul className="p-0">
-              <li class="py-[8px] flex justify-center sm:justify-normal">
+              <li className="py-[8px] flex justify-center sm:justify-normal">
                 <a
                   rel="noopener noreferrer"
                   href="#"
@@ -96,7 +96,7 @@ const Footer = () => {
                   <FaPhoneAlt className="text-[20px]"/><span>+91 98211 21575</span>
                 </a>
               </li>
-              <li class="py-[8px] flex justify-center sm:justify-normal">
+              <li className="py-[8px] flex justify-center sm:justify-normal">
                 <a
                   rel="noopener noreferrer"
                   href="#"
@@ -105,7 +105,7 @@ const Footer = () => {
                   <FaEnvelope className="text-[20px]"/> <span className="text-left">info@softsynthsoftware.com</span>
                 </a>
               </li>
-              <li class="py-[8px] flex justify-center sm:justify-normal">
+              <li className="py-[8px] flex justify-center sm:justify-normal">
                 <a
                   rel="noopener noreferrer"
                   href="#"
