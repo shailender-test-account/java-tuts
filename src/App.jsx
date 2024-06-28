@@ -5,7 +5,9 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Courses from './components/Courses';
 import Whyjava from './components/Whyjava';
-
+import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
+import Action from './components/Action';
 
 
 function App() {
@@ -16,7 +18,10 @@ function App() {
       <About />
       <Courses />
       <Whyjava/>
-     
+      <Testimonials />
+      <Action />
+      <Footer />
+
 
 
 
