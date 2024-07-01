@@ -21,13 +21,8 @@ function App() {
       <Whyjava/>
       <Syllabus/>
       <Testimonials/>
-     
-
-     
-
-
-
-
+      <Action/>
+      <Footer/>
     </BrowserRouter>
   )
 }
