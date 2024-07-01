@@ -29,7 +29,7 @@ function Navbar() {
 
     const navvariant = {
         visible: {
-            height: 130,
+            height: 105,
             position: "fixed",
             top: 0,
             left: 0,
@@ -44,6 +44,26 @@ function Navbar() {
         }
 
     }
+
+    const sidebar = {
+        open: (height = 1000) => ({
+          clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+          transition: {
+            type: "spring",
+            stiffness: 20,
+            restDelta: 2
+          }
+        }),
+        closed: {
+          clipPath: "circle(30px at 40px 40px)",
+          transition: {
+            delay: 0.5,
+            type: "spring",
+            stiffness: 400,
+            damping: 40
+          }
+        }
+      };
 
     const [nav, setNav] = useState(false);
 
@@ -70,7 +90,7 @@ function Navbar() {
 
         <div >
             <motion.nav variants={navvariant} animate={hidden ? "visible" : "hidden"} transition={{ duration: 1, ease: "linear", type: "spring" }} className='w-full p-5 h-20  flex justify-between items-center bg-[#1b2430] z-50'  >
-                <div className=' w-13  h-14 flex justify-center items-center'>
+                <div className=' w-13  h-14 flex justify-center items-center z-10'>
                     <img className='w-full h-full  px-2' src={Logo} alt="" />
                 </div>
 
@@ -167,72 +187,68 @@ function Navbar() {
 
 
                 {/* mobile navigation */}
-                {/* <ul className={nav ? ('w-full h-full fixed  z-5 bg-[#1b2430] text-[#dddcdc]  top-0 left-0 flex flex-col  gap-y-3 p-3 duration-500 ease-in-out') : ('w-full h-full fixed top-0 left-[-150px] duration-500 ease-in-out')}>
-
-                    <div className=' w-12 h-10 flex justify-center items-center'>
-                        <img className='w-full h-full' src={Logo} alt="" />
-                    </div>
+                <motion.div variants={sidebar} animate={nav ? "open" : "closed"} className={nav ? 'w-full h-full  bg-[#1b2430] fixed top-0 left-0':'w-full h-full fixed top-[-100vh] left-0'}>
 
 
-                    <li>
+                    <ul className=' mt-36 flex flex-col gap-y-10'>
+                        <li>
 
-                        <Link to="/" >
-                            Home
+                            <Link to="/" className='font-serif text-[20px]  text-[#dddcdc] hover:text-[#17cf97]'>
+                                Home
 
-                        </Link>
+                            </Link>
 
-                    </li>
+                        </li>
 
-                    <li>
+                        <li>
 
-                        <Link to="about" >
-                            About
+                            <Link to="about" className='font-serif text-[20px]  text-[#dddcdc] hover:text-[#17cf97]'>
+                                About
 
-                        </Link>
+                            </Link>
 
-                    </li>
-                    <li>
+                        </li>
+                        <li>
 
-                        <Link to="courses">
-                            Courses
+                            <Link to="courses" className='font-serif text-[20px]  text-[#dddcdc] hover:text-[#17cf97]'>
+                                Courses
 
-                        </Link>
+                            </Link>
 
-                    </li>
+                        </li>
 
-                    <li>
+                        <li>
 
-                        <Link to="roadmap" >
-                            Roadmap
+                            <Link to="roadmap" className='font-serif text-[20px]  text-[#dddcdc] hover:text-[#17cf97]'>
+                                Roadmap
 
-                        </Link>
+                            </Link>
 
-                    </li>
+                        </li>
 
-                    <li>
+                        <li>
 
-                        <Link to="blog" >
-                            Blog
+                            <Link to="blog" className='font-serif text-[20px]  text-[#dddcdc] hover:text-[#17cf97]'>
+                                Blog
 
-                        </Link>
+                            </Link>
 
-                    </li>
-
-
-                    <li>
-
-                        <Link to="contact" >
-                            Contact
-
-                        </Link>
-
-                    </li>
+                        </li>
 
 
+                        <li>
 
+                            <Link to="contact" className='font-serif text-[20px]  text-[#dddcdc] hover:text-[#17cf97]'>
+                                Contact
 
+                            </Link>
 
-                </ul> */}
+                        </li>
+
+                    </ul>
+
+                </motion.div>
+
 
             </motion.nav>
 

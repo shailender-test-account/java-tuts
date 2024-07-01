@@ -4,6 +4,7 @@ import fulldev from "../assets/frontsoft.jpg";
 import database from "../assets/databasesoft.jpg";
 import corejava from "../assets/javasoft.jpg";
 import devopsn from "../assets/devopsnew.jpg";
+import { FaArrowRight } from "react-icons/fa";
 
 function Skillcard() {
   useEffect(() => {
@@ -53,6 +54,7 @@ function Skillcard() {
                 <h1 className="text-[#1b2430] text-[20px] font-bold font-serif">The Complete Java Development Bootcamp
                 </h1>
                 <p className=" text-[#1b2430] font-serif font-[200]">Updated July 2024</p>
+                <span className="text-[#1b2430] text-[15px] cursor-pointer gap-x-2 flex font-serif  justify-center items-center hover:text-[#17cf97] transition-all duration-300">Read More <FaArrowRight/></span>
 
               </div>
               
@@ -71,6 +73,7 @@ function Skillcard() {
                 <h1 className="text-[#1b2430] text-[20px] font-bold font-serif">Database Management System (DBMS) & SQL : Complete Pack-2024
                 </h1>
                 <p className=" text-[#1b2430] font-serif font-[200]">Updated July 2024</p>
+                <span className="text-[#1b2430] text-[15px] cursor-pointer gap-x-2 flex font-serif  justify-center items-center hover:text-[#17cf97] transition-all duration-300">Read More <FaArrowRight/></span>
 
               </div>
              
@@ -88,6 +91,7 @@ function Skillcard() {
               <div className="w-full p-2">
                 <h1 className="text-[#1b2430] text-[20px] font-bold font-serif">Java from Zero to First Job, Practical Guide, 2000+ examples</h1>
                 <p className=" text-[#1b2430] font-serif font-[200]">Updated July 2024</p>
+                <span className="text-[#1b2430] text-[15px] cursor-pointer gap-x-2 flex font-serif  justify-center items-center hover:text-[#17cf97] transition-all duration-300">Read More <FaArrowRight/></span>
 
               </div>
              
@@ -105,6 +109,7 @@ function Skillcard() {
               <div className="w-full p-2">
                 <h1 className="text-[#1b2430] text-[20px] font-bold font-serif">DevOps Beginners to Advanced with Projects</h1>
                 <p className=" text-[#1b2430] font-serif font-[200]">Updated July 2024</p>
+                <span className="text-[#1b2430] text-[15px] cursor-pointer gap-x-2 flex font-serif  justify-center items-center hover:text-[#17cf97] transition-all duration-300">Read More <FaArrowRight/></span>
 
               </div>
               
