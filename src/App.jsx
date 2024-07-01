@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Courses />
+      <Courses/>
       <Whyjava/>
       <Syllabus/>
       <Testimonials/>
